@@ -85,8 +85,10 @@ function setIntervalCrono(){
 
         if(countTime<=10 && countTime>0){
             // .play();
-            if(boolSound==true)
-            {sonidoClick.play();}
+            // if(boolSound==true)
+            // {
+                sonidoClick.play();
+            // }
         }
         if(countTime == 0){
             clearInterval(storeTimeInterval);
@@ -369,9 +371,10 @@ $('.card').click(   function(){
                 // sonidoClick.stop();
                 
             }
-            if(boolSound==true)
-            {   sonidoGood.play();
-            }
+            // if(boolSound==true)
+            // {  
+                 sonidoGood.play();
+            // }
             // alert("GOOD");
         }else{
             // $(this).toggleClass('flipped');
@@ -382,8 +385,10 @@ $('.card').click(   function(){
             // $(this).toggleClass('flipped');
             setAlert("Oops...","sorry, but this is not a match","error",obj_);
             // ESTOS DOS
-            if(boolSound==true)
-            {sonidoBad.play();}
+            // if(boolSound==true)
+            // {
+                sonidoBad.play();
+            // }
             
             // $(`#${objRemember.id+""+objRemember.p}`).toggleClass('flipped');
             // $(this).toggleClass('flipped');
