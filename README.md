@@ -8,7 +8,7 @@ git clone https://github.com/RupertsVargas/ChallengeTest.git
 --run in terminal--
 
 ## Run
-Open Index
+Open Index file
 
 ## Description
 "Create a memory game using any JS and CSS frameworks."
