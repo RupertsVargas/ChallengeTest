@@ -228,6 +228,7 @@ function setAlert(title,text,icon,obj){
     // let obj_ = Object.entries(obj).length === 0 ? {} : objRemember;
     
 Swal.fire({
+position: 'bottom-left',
 title:title,
 text: text,
 icon: icon,
