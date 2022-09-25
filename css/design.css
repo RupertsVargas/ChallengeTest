@@ -1,0 +1,328 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: monospace;
+    /* background-color: ; */
+    /* background: #242424; */
+    background: #18191a;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #242526;
+    display: flex;
+    align-items: center;
+    top: 0;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    /* margin-bottom: 100px; */
+
+}
+.soundPlay{
+    width: 39px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+    background: #5555557d;
+    justify-content: center;
+}
+.firstScreen{
+    /* height: 83vh;
+    width: 70%;
+    background-color: #242526 ;
+    margin: auto; */
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    /* transition: ease 1s; */
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    /* animation-iteration-count: infinite; */
+    /* -webkit-animation-iteration-count: infinite; */
+}
+.thirdScreen{
+    /* height: 83vh;
+    width: 70%;
+    background-color: #242526 ;
+    margin: auto; */
+    width: 75%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    /* transition: ease 1s; */
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    /* animation-iteration-count: infinite; */
+    /* -webkit-animation-iteration-count: infinite; */
+}
+#segundero{
+    color: white;
+    font-size: 22px;
+}
+.titleAverage{
+    font-size: 42px;
+    /* color: #ffbdbd; */
+}
+
+#idSection3{
+    display: none;
+}
+#idSection2
+{
+    display: none;
+    overflow-y: visible;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+
+}
+.letterInfo{
+    font-size: 12px;
+}
+.sectionContainer{
+    margin: 90px;
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 83vh;
+    display: flex;
+    overflow: hidden;
+    overflow-y: visible;
+    width: 65%;
+    background-color: #242526;
+    /* margin: auto; */
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    display: grid;
+    justify-content: center;
+    align-content: space-evenly;
+
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+ 
+.container {
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 80%;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+
+.card {
+width: 40%;
+height: 80px;
+/* position: absolute; */
+cursor: pointer;
+border-radius: 4px;
+text-align: center;
+/* Determinamos la trasicion de los efectos */
+-webkit-transition: -webkit-transform 0.4s;
+-moz-transition: -moz-transform 0.4s;
+-o-transition: -o-transform 0.4s;
+transition: transform 0.4s;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+transform-style: preserve-3d;
+display: flex;
+align-items: center;
+justify-content: center;
+ 
+    /* margin-bottom: 3%; */
+    /* margin-right: 4%; */
+
+}
+
+/* Determinamos los grados de la rotación de la tarjeta */
+.card.flipped {
+-webkit-transform: rotateY( 180deg );
+-moz-transform: rotateY( 180deg );
+-o-transform: rotateY( 180deg );
+transform: rotateY( 180deg );
+}
+
+/* */
+.card .front,
+.card .back {
+    display: block;
+    height: 100%;
+    border-radius: 4px;
+    width: 80%;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    /* padding: 15px; */
+    /* margin: 10px; */
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    display: flex;
+    backface-visibility: hidden;
+    box-shadow: 3px 5px 20px 2px rgb(0 0 0 / 25%);
+    align-items: center;
+   
+    justify-content: center;
+}
+ #idContainerPre{
+    overflow: visible ;
+} 
+
+.name{
+    color: white;
+}
+.profile{
+    
+    background-image: url(../me.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+}
+.logo_{
+    position: relative;
+    top:-1000px;
+    background-image: url(../assets/logo.svg);
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert();
+    background-size: 70%;
+}
+.img_class{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* filter: invert(); */
+    background-size: 100%;
+}
+.btnVideogame{
+    margin-top: 18px;
+    color: white;
+    position: relative;
+    font-size: 40px;
+    bottom:-1000px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.btnVideogame02{
+    margin-top: 18px;
+    color: white;
+    position: relative;
+    font-size: 40px;
+    /* bottom:-1000px; */
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Determinamos los estilos deseados en la cara de atras de la tarjeta*/
+.card .back {
+width: 80%;
+margin: auto;
+/* font-size: 16px; */
+text-align: left;
+line-height: 25px;
+text-align: center;
+/* background: #ff5a5a; */
+background: #5f5f5f;
+/* Animacion para rotar la cara trasera */
+-webkit-transform: rotateY( 180deg );
+-moz-transform: rotateY( 180deg );
+-o-transform: rotateY( 180deg );
+transform: rotateY( 180deg );
+transition: ease-in-out 1s;
+}
+
+/*Determinamos los estilos deseados en la cara de delantera de la tarjeta*/ 
+.card .front {
+/* background: #172c84; */
+background-color: #27aae1 ;
+color:#eeee4b;
+}
+
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+.clickId{
+    
+        cursor: pointer;
+        animation-name: bounce;
+        -moz-animation-name: bounce;
+
+}
+
+.customeSweet{
+    background: #494949f1 !important;
+    color:white !important
+}
+.swal2-title{
+    color: white!important;
+}
+.swal2-content{
+    color:white !important
+}
